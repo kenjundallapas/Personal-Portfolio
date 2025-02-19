@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #152441d0;
+    border-radius: 5px;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left section (Profile) */
+.profile-left {
+    flex: 1;
+    background: #152441d0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Right section (Content) */
+.content-right {
+    flex: 1;
+    background: #1a1a1a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    position: relative;
+}
+
+.content-right h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.content-right h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    width: 250px;
+    height: 3px;
+    background: white;
+    transform: translateY(-50%);
+}
+
+.content-right p {
+    font-size: 20px;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
