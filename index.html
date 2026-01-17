@@ -4,28 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ken's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#works">Works</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <main class="container">
-        <div class="profile-left">
+    <div class="main-layout">
+        
+        <aside class="profile-left">
             <img src="images/myimg.png" alt="Ken's Profile" class="profile-pic">
-        </div>
-        <div class="content-right">
-            <h1>My Portfolio</h1>
-            <p>Welcome to my personal portfolio! Learn more about my work and projects.</p>
-        </div>
-    </main>
+        </aside>
+
+        <main class="content-right">
+            
+            <section id="about" class="section-card">
+                <h1>My Portfolio</h1>
+                <p>Welcome to my personal portfolio! I am a passionate developer focused on creating clean, efficient, and user-friendly solutions.</p>
+            </section>
+
+            <section id="education" class="section-card">
+                <h2>Education</h2>
+                <div class="item">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p class="subtitle">University of the Cordilleras | 2023 - Present</p>
+                    <p>Focusing on Web Development, Frontend, and System Design.</p>
+                </div>
+            </section>
+
+            <section id="experience" class="section-card">
+                <h2>Experience</h2>
+                <div class="item">
+                    <h3>Game Designer</h3>
+                    <p class="subtitle">Capstone 1 | 2025</p>
+                    <p>Used my knowledge in HTML and CSS to adapt in a new environment which showcases my skill</p>
+                </div>
+            </section>
+
+            <section id="skills" class="section-card">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Responsive Design</span>
+                </div>
+            </section>
+
+            <section id="projects" class="section-card">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A responsive portfolio built to showcase my skills and projects, hosted on GitHub Pages.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Learning Contract</h3>
+                    <p>A digital contract outlining my goals and expectations for my web development journey.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="section-card">
+                <h2>Contact Information</h2>
+                <p>Feel free to reach out to me for collaborations or inquiries.</p>
+                <button id="contactBtn" class="contact-btn">Reveal Email</button>
+                <p id="emailDisplay" style="display:none; margin-top: 10px; color: #3b82f6;">lkennylrewind@gmail.com</p>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Kenjun. Hosted on GitHub Pages.</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
